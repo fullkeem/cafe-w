@@ -6,7 +6,8 @@
   --base-font: #7d6f5d;
 }
 
-.blended-container {
+/* blended */
+.blended {
   height: 540px;
   background-image: url(../assets/hero-medal-bg.svg);
   background-attachment: fixed;
@@ -73,8 +74,22 @@
   padding: 10px 20px;
   background: transparent;
   font-size: 1.2em;
+  font-weight: 600;
   color: var(--base-font);
   border: 2px solid var(--base-font);
   border-radius: 3px;
   line-height: 1;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  color: var(--base-bg);
+  border: 2px solid var(--base-font);
+  background: var(--base-font);
+}
+
+/* store */
+.store {
+  height: 420px;
+  background-image: url(../assets/hero-store-bg.svg);
 }
