@@ -1,5 +1,13 @@
+body,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
 body {
   width: 1440px;
+  box-sizing: border-box;
   font-family: "Pretendard Variable", Pretendard, -apple-system,
     BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
@@ -26,4 +34,8 @@ legend {
   clip-path: polygon(0 0, 0 0, 0 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.round {
+  background-color: var(--base-bg);
 }
