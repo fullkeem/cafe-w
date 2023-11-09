@@ -155,8 +155,8 @@
 
 .store-find {
   padding: 10px 20px;
-  color: #fffcf9;
-  border: 1px solid #fffcf9;
+  color: var(--base-bg);
+  border: 1px solid var(--base-bg);
   text-decoration: none;
   line-height: 1;
 }
