@@ -7,10 +7,18 @@
 }
 
 /* blended */
+.choongman {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .blended {
   height: 540px;
   background-image: url(../assets/hero-medal-bg.svg);
   background-attachment: fixed;
+  background-position: center top;
 }
 
 .blended-inner {
@@ -92,4 +100,27 @@
 .store {
   height: 420px;
   background-image: url(../assets/hero-store-bg.svg);
+}
+
+.store-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.overlaid-photos {
+  position: relative;
+  & li {
+    position: absolute;
+  }
+}
+
+.overlaid-photos li:nth-child(1) {
+  width: 320px;
+  height: 320px;
+  z-index: 5;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 }
