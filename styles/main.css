@@ -15,6 +15,7 @@
 }
 
 .blended {
+  max-width: inherit;
   height: 540px;
   background-image: url(../assets/hero-medal-bg.svg);
   background-attachment: fixed;
@@ -98,29 +99,73 @@
 
 /* store */
 .store {
+  max-width: inherit;
   height: 420px;
   background-image: url(../assets/hero-store-bg.svg);
 }
 
 .store-inner {
-  display: flex;
-  justify-content: space-around;
-}
-
-.overlaid-photos {
   position: relative;
-  & li {
-    position: absolute;
+  height: inherit;
+}
+
+.store-pic1,
+.store-pic2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.6));
+}
+
+.store-pic1 {
+  top: -15%;
+  left: 15%;
+  width: 360px;
+  height: 360px;
+  background: url(../assets/coffee-table.svg) no-repeat 50% 50% / cover;
+}
+
+.store-pic2 {
+  top: 35%;
+  left: 32%;
+  width: 220px;
+  height: 220px;
+  background: url(../assets/coffee-woman.svg) no-repeat 60% 60% / cover;
+  border-radius: 50%;
+}
+
+.intro-cafe {
+  margin-top: 80px;
+  padding-right: 250px;
+  float: right;
+  color: #fffcf9;
+  line-height: 1.5;
+
+  & h2 {
+    margin: 0;
+  }
+
+  & .mb-0 {
+    margin: 0;
+  }
+
+  & :nth-child(3) {
+    margin-bottom: 40px;
   }
 }
 
-.overlaid-photos li:nth-child(1) {
-  width: 320px;
-  height: 320px;
-  z-index: 5;
+.store-find {
+  padding: 10px 20px;
+  color: #fffcf9;
+  border: 1px solid #fffcf9;
+  text-decoration: none;
+  line-height: 1;
+}
 
-  & img {
-    width: 100%;
-    height: 100%;
-  }
+.store-pic3 {
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  width: 152px;
+  height: 127px;
+  background: url(../assets/coffee-store.svg);
 }
