@@ -17,9 +17,7 @@
 .blended {
   max-width: inherit;
   height: 540px;
-  background-image: url(../assets/hero-medal-bg.svg);
-  background-attachment: fixed;
-  background-position: center top;
+  background: url(../assets/hero-medal-bg.svg) center top fixed;
 }
 
 .blended-inner {
@@ -52,15 +50,13 @@
 }
 
 .front {
-  background-image: url(../assets/ellipse.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../assets/ellipse.svg) center no-repeat;
   transform: rotateY(0deg);
 }
 
 .back {
   flex-direction: column;
-  background-image: url(../assets/medal-back.svg);
+  background: url(../assets/medal-back.svg);
   background-size: cover;
   color: var(--base-font);
   transform: rotateY(-180deg);
@@ -84,6 +80,7 @@
   background: transparent;
   font-size: 1.2em;
   font-weight: 600;
+  text-decoration: none;
   color: var(--base-font);
   border: 2px solid var(--base-font);
   border-radius: 3px;
@@ -101,7 +98,14 @@
 .store {
   max-width: inherit;
   height: 420px;
-  background-image: url(../assets/hero-store-bg.svg);
+  background: linear-gradient(
+    300deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(61, 61, 61, 1) 25%,
+    rgba(96, 96, 96, 1) 50%,
+    rgba(55, 55, 55, 1) 75%,
+    rgba(8, 7, 7, 1) 100%
+  );
 }
 
 .store-inner {
@@ -141,6 +145,7 @@
   line-height: 1.5;
 
   & h2 {
+    font-size: 30px;
     margin: 0;
   }
 
@@ -157,8 +162,16 @@
   padding: 10px 20px;
   color: var(--base-bg);
   border: 1px solid var(--base-bg);
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 600;
   text-decoration: none;
   line-height: 1;
+}
+
+.store-find:hover {
+  color: rgba(0, 0, 0, 0.6);
+  background: var(--base-bg);
 }
 
 .store-pic3 {
